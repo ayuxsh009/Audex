@@ -394,7 +394,7 @@ export default function AudioTranscriber() {
             <button onClick={toggleTheme} className="btn btn-theme" title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
               {isDarkMode ? <SunIcon /> : <MoonIcon />}
             </button>
-            <a href="https://github.com/ayuxsh009/audio-transcribe" target="_blank" rel="noopener noreferrer" className="btn btn-github">
+            <a href="https://github.com/ayuxsh009/Audex" target="_blank" rel="noopener noreferrer" className="btn btn-github">
               <GitHubIcon /> GitHub
             </a>
           </div>
