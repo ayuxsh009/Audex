@@ -310,8 +310,10 @@ export default function AudioTranscriber() {
     }
     formData.append('language', selectedLanguage);
 
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+    
     try {
-      const response = await axios.post('http://localhost:8080/api/transcribe', formData, {
+      const response = await axios.post(`${API_URL}/api/transcribe`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setTranscription(response.data.text || response.data);
